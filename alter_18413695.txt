@@ -1,0 +1,87 @@
+--user@barun/barun
+--modifying the table
+--@E:\DB-BARUN\alter_18413695.txt
+
+-- main code begins
+
+ALTER TABLE SITES
+ADD CONSTRAINT pk_SITES
+PRIMARY KEY (site_id);
+
+ALTER TABLE trainers
+ADD CONSTRAINT trainers
+PRIMARY KEY (trainer_id);
+
+ALTER TABLE subject_areas
+ADD CONSTRAINT pk_subject_areas
+PRIMARY KEY (subject_id);
+
+ALTER TABLE students
+ADD CONSTRAINT pk_students
+PRIMARY KEY (student_id);
+
+
+
+
+ALTER TABLE courses
+ADD CONSTRAINT pk_courses
+PRIMARY KEY (course_id);
+
+ALTER TABLE courses_runs
+ADD CONSTRAINT pk_courses_runs
+PRIMARY KEY (running_id);
+
+
+
+ALTER TABLE courses
+ADD CONSTRAINT fk_c_subject_areas
+FOREIGN Key (subject_id)
+REFERENCES subject_areas(subject_id);
+
+
+
+ALTER TABLE courses_runs
+ADD CONSTANT fk_c_courses
+REFERENCES courses(course_id);
+
+ALTER TABLE courses_runs
+ADD CONSTANT fk_c_sites
+REFERENCES sites(site_id);
+
+ALTER TABLE courses_runs
+ADD CONSTANT fk_c_trainers
+REFERENCES trainers(trainer_id);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
++
+

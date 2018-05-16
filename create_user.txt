@@ -1,0 +1,12 @@
+-- @E:\DB-BARUN\create_user.txt
+create user barun identified by barun;
+grant create session to barun;
+grant create table to barun;
+grant create view to barun;
+grant create sequence to barun;
+grant create synonym to barun;
+grant create procedure to barun;
+grant create trigger to barun;
+grant create cluster to barun;
+grant create type to barun;
+grant unlimited tablespace to barun;

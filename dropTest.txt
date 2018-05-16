@@ -1,0 +1,10 @@
+
+--@E:\DB-BARUN\dropTest.txt
+
+
+DROP TABLE loans;
+DROP TABLE SITES;
+DROP TABLE students;
+
+
+PURGE RECYCLEBIN;

@@ -1,0 +1,42 @@
+
+--@E:\DB-BARUN\drop_18413695.txt
+
+
+
+
+
+
+
+
+
+
+
+
+ALTER TABLE courses
+DROP CONSTRAINT fk_c_subject_areas ;
+
+ALTER TABLE courses
+DROP CONSTRAINT pk_courses;
+
+ALTER TABLE subject_areas
+DROP CONSTRAINT pk_subject_areas;
+
+ALTER TABLE SITES
+DROP CONSTRAINT pk_SITES ;
+
+ALTER TABLE students
+DROP CONSTRAINT pk_students ;
+
+ALTER TABLE TRAINERS
+DROP CONSTRAINT pk_TRAINERS;
+
+
+DROP TABLE SITES;
+DROP TABLE SUBJECT_AREAS;
+DROP TABLE TRAINERS;
+DROP TABLE courses;
+DROP TABLE courses_runs;
+DROP TABLE students;
+
+
+PURGE RECYCLEBIN;

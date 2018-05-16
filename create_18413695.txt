@@ -1,0 +1,60 @@
+--username@barun/barun
+/* 
+module_name, your_name, date
+
+good practice is important.  
+Script filess should structured, tidy and professional to aim usability
+ 
+*/
+ 
+
+
+
+-- RunCommand EG @E:\DB-BARUN\\create_18413695.txt
+CREATE TABLE SITES(
+site_id NUMBER(5),
+site_name VARCHAR2(20));
+
+ALTER TABLE SITES ADD(
+location VARCHAR2(30));
+
+/*
+ALTER TABLE students ADD(
+date_of_birth DATE);
+
+*/
+
+CREATE TABLE subject_areas(
+subject_id NUMBER(4),
+subject_name VARCHAR2(15),
+description VARCHAR2(30));
+
+CREATE TABLE trainers(
+trainer_id NUMBER(4),
+t_firstname VARCHAR2(15),
+t_surname VARCHAR2(15),
+mentor_id NUMBER(5),
+contact_no VARCHAR2(15),
+rate NUMBER(3));
+
+CREATE TABLE students(
+student_id      NUMBER(4),
+st_fname   VARCHAR2(10),
+st_sname   VARCHAR2(12),
+address 	VARCHAR2(30),
+date_of_birth DATE);
+
+CREATE TABLE courses(
+course_id NUMBER(3),
+course_title VARCHAR2(30),
+subject_id Number(4),
+duration NUMBER(4),
+cost NUMBER(10,2));
+
+CREATE TABLE courses_runs(
+running_id NUMBER(3),
+student_id Number(4),
+site_id NUMBER(5),
+course_id NUMBER(3),
+trainer_id Number(4),
+start_date DATE);
